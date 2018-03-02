@@ -1,11 +1,11 @@
 {
-    "errors": {
+    "error": {
         "ports": [{
             "seq": 1,
             "url": "spirit://actors/fbp/post-api/external?action=callback"
         }]
     },
-    "normal": {
+    "entrypoint": {
         "ports": [{
             "seq": 1,
             "url": "spirit://actors/fbp/goja/todo?action={{.api}}"
