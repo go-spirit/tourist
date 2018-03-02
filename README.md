@@ -40,6 +40,8 @@ combine component `post-api` and `todo`
 
 #### Run
 
+Before you run this part, please make sure you were updated the `configs/todo-split/secret.conf` to your own aliyun account
+
 ```bash
 > ./todo-split run --config configs/todo-split/todo.conf
 > ./postapi-split run --config configs/todo-split/postapi.conf
