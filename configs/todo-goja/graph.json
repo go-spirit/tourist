@@ -1,0 +1,17 @@
+{
+    "errors": {
+        "ports": [{
+            "seq": 1,
+            "url": "spirit://actors/fbp/post-api/external?action=callback"
+        }]
+    },
+    "normal": {
+        "ports": [{
+            "seq": 1,
+            "url": "spirit://actors/fbp/goja/todo?action={{.api}}"
+        },{
+            "seq": 2,
+            "url": "spirit://actors/fbp/post-api/external?action=callback"
+        }]
+    }
+}
