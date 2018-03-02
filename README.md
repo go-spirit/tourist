@@ -13,7 +13,7 @@ Tourist for spirit and spirit-builder
 > make pull && make all
 ```
 
-### todo-goja
+### Tourist 1 - todo-goja
 
 combine component `post-api` and `goja`
 
@@ -23,31 +23,7 @@ combine component `post-api` and `goja`
 > ./todo-goja run --config configs/todo-goja/todo.conf
 ```
 
-
-### todo-combined
-
-combine component `post-api` and `todo`
-
-#### Run
-
-```bash
-> ./todo-combined run --config configs/todo-combined/todo.conf
-```
-
-### todo-split
-
-combine component `post-api` and `todo`
-
-#### Run
-
-Before you run this part, please make sure you were updated the `configs/todo-split/secret.conf` to your own aliyun account
-
-```bash
-> ./todo-split run --config configs/todo-split/todo.conf
-> ./postapi-split run --config configs/todo-split/postapi.conf
-```
-
-### test
+#### Test
 
 #### Add task
 
@@ -99,3 +75,34 @@ curl -X POST \
     }
 }
 ```
+
+### Tourist 2 - todo-combined
+
+combine component `post-api` and `todo`
+
+#### Run
+
+```bash
+> ./todo-combined run --config configs/todo-combined/todo.conf
+```
+
+#### Test
+
+> Use Tourist 1's test-case to test this tourist
+
+###  Tourist 3 - todo-split
+
+combine component `post-api` and `todo`
+
+#### Run
+
+Before you run this part, please make sure you were updated the `configs/todo-split/secret.conf` to your own aliyun account, and you create `mns queues` of `todo-task-listen` and `api-call-back`
+
+```bash
+> ./todo-split run --config configs/todo-split/todo.conf
+> ./postapi-split run --config configs/todo-split/postapi.conf
+```
+
+#### Test
+
+> Use Tourist 1's test-case to test this tourist
