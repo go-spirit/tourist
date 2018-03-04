@@ -1,10 +1,10 @@
 # Tourist
-Tourist for spirit and spirit-builder
+Tourist for spirit and go-spirit
 
-### Install spirit-builder
+### Install go-spirit
 
 ```bash
-> go get github.com/go-spirit/spirit-builder
+> go get github.com/go-spirit/go-spirit
 ```
 
 ### Build all
