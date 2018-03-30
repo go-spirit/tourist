@@ -15,7 +15,7 @@ Tourist for spirit and go-spirit
 
 ### Tourist 1 - todo-goja
 
-combine component `post-api` and `goja`
+combine component `postapi` and `goja`
 
 #### Run
 
@@ -78,7 +78,7 @@ curl -X POST \
 
 ### Tourist 2 - todo-combined
 
-combine component `post-api` and `todo`
+combine component `postapi` and `todo`
 
 #### Run
 
@@ -92,7 +92,7 @@ combine component `post-api` and `todo`
 
 ###  Tourist 3 - todo-split
 
-combine component `post-api` and `todo`
+combine component `postapi` and `todo`
 
 #### Run
 
