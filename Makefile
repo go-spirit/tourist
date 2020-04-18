@@ -16,6 +16,9 @@ todo-combined:
 todo-goja:
 	@go-spirit build --config configs/todo-goja/build.conf
 
+todo-mqtt:
+	@go-spirit build --config configs/todo-split/build-mqtt.conf
+
 clean:
 	@rm -f ./todo-goja
 	@rm -f ./todo-combined
